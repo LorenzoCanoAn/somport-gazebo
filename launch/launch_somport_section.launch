@@ -2,6 +2,12 @@
 
 <launch>
     <!-- Start Gazebo with world -->
+    <!-- Different options for section are:
+    - somport_complete
+    - section_1
+    ...
+    - section_6
+    -->
     <arg name="section" default="somport_complete" />
     <arg name="path_to_scenario" value="$(find somport_gazebo)/worlds/$(arg scenario).world" />
 
