@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<launch>
+    <!-- Start Gazebo with world -->
+    <arg name="section" default="somport_complete" />
+    <arg name="path_to_scenario" value="$(find somport_gazebo)/worlds/$(arg scenario).world" />
+
+    <!-- Launch gazebo with the loaded world-->
+    <include file="$(find hector_gazebo_worlds)/launch/start.launch">
+        <arg name="world" value="$(arg path_to_scenario)" />
+    </include>
+</launch>
