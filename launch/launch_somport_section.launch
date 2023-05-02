@@ -8,8 +8,8 @@
     ...
     - section_6
     -->
-    <arg name="section" default="somport_complete" />
-    <arg name="path_to_scenario" value="$(find somport_gazebo)/worlds/$(arg scenario).world" />
+    <arg name="section" default="complete" />
+    <arg name="path_to_scenario" value="$(find somport_gazebo)/worlds/$(arg section).world" />
 
     <!-- Launch gazebo with the loaded world-->
     <include file="$(find hector_gazebo_worlds)/launch/start.launch">
