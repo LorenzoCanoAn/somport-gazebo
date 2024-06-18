@@ -12,7 +12,7 @@
     <arg name="path_to_scenario" value="$(find somport_gazebo)/worlds/$(arg section).world" />
 
     <!-- Launch gazebo with the loaded world-->
-    <include file="$(find hector_gazebo_worlds)/launch/start.launch">
-        <arg name="world" value="$(arg path_to_scenario)" />
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(arg path_to_scenario)" />
     </include>
 </launch>
