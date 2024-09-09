@@ -3,7 +3,7 @@
     <world name="section_1">
         <gui fullscreen='0'>
             <camera name='user_camera'>
-                <pose>-6.3 -4.2 3.6 0 0.268 0.304</pose>
+                <pose>-10.84 180.85 39.53 0 0.424 0.147</pose>
             </camera>
         </gui>
         <scene>
@@ -14,6 +14,9 @@
         </scene>
         <!-- The base station / staging area -->
         <!-- Important: Do not rename this model! -->
+        <include>
+            <uri>model://sun</uri>
+        </include>
         <include>
             <static>true</static>
             <name>SomportSection1</name>
